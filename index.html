@@ -1,12 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- know more about meta tags -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="pre-loader"> 
+        <div id="pre-loader">
+            <svg class="circle-outer" viewBox="0 0 86 86">
+                <circle class="back" cx="43" cy="43" r="40"></circle>
+                <circle class="front" cx="43" cy="43" r="40"></circle>
+                <circle class="new" cx="43" cy="43" r="40"></circle>
+            </svg>
+            <svg class="circle-middle" viewBox="0 0 60 60">
+                <circle class="back" cx="30" cy="30" r="27"></circle>
+                <circle class="front" cx="30" cy="30" r="27"></circle>
+            </svg>
+            <svg class="circle-inner" viewBox="0 0 34 34">
+                <circle class="back" cx="17" cy="17" r="14"></circle>
+                <circle class="front" cx="17" cy="17" r="14"></circle>
+            </svg>
+            <svg class="circle-main">
+                <circle class="front"></circle>
+            </svg>
+            <div class="text" data-text="Loading..."></div>
+        </div>
+    </div>
+    <div class="auth">
+        <div class="auth-form">
+            <div class="sign-in"></div>
+            <div class="sign-up"></div>
+        </div>
+    </div>
+    <div class="tab-selection">
+        <div class="feedback-tab"></div>
+        <div class="reviews-tab"></div>
+    </div>
+    <div class="nav-bar">
+        <div class="logo">BiteBetter</div>
+        <ul>
+        <li>Home</li>
+        <li>How to Use?</li>
+        <li>About</li>
+        <li>Contact Us</li>
+        <span class="profile">AD</span>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="feedback">
+            <span>Feedback form</span>
+            <div class="meal-tab">
+                Choose the meal for which you want to give feedback:
+                <div class="meal" id="breakfast">Breakfast<span></span></div>
+                <div class="meal" id="lunch">Lunch<span></span></div>
+                <div class="meal" id="snacks">Snacks<span></span></div>
+                <div class="meal" id="dinner">Dinner<span></span></div>
+            </div>
+        </div>
+        <div class="reviews"></div>
+    </div>
 </body>
 </html>
